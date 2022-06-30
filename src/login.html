@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+		"title":"Sign in"
+	})
+	<body>
+		@@include('html/_preloader-markup.htm',{})
+		<div class="wrapper">
+			<div class="wrapper__bg">
+				<div class="wrapper__image-ibg">
+					<img src="img/bg.png" alt="Apvition">
+				</div>
+			</div>
+			<main class="main">
+				<div class="form-content">
+					<h1 class="heading">Sign In to Apvision</h1>
+					<a class="login-link" href="https://google.com" target="_blank">
+						<img src="img/interface/google.svg" alt="Apvision">
+						<span>Google</span>
+					</a>
+					<a class="login-link" href="https://linkedin.com" target="_blank">
+						<img src="img/interface/linkedin.svg" alt="Apvision">
+						<span>Linkedin</span>
+					</a>
+					<div class="divide-line"><span>or</span></div>
+					<form class="form" action="#">
+						<fieldset class="form__item">
+							<input type="text" name="email" data-required="email" placeholder="Email">
+						</fieldset>
+						<fieldset class="form__item">
+							<input type="password" name="password" data-required="password" placeholder="Password">
+							<div class="form__viewpass"></div>
+						</fieldset>
+						<button type="submit" class="button">Login</button>
+					</form>
+					<a class="forgot-link" href="forgot-password.html">Forgot password?</a>
+					<span class="help-question">Don’t have an account?</span>
+					<a class="help-link" href="register.html">Register</a>
+				</div>
+			</main>
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

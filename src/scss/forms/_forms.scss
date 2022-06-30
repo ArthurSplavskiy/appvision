@@ -1,0 +1,107 @@
+.form {
+    
+    &__item {
+        position: relative;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &._error input {
+            border-color: $red;
+        }
+        &._focus input {
+            border-color: $hover;
+        }
+		&._focus .form__required {
+			display: none;
+		}
+
+        input {
+            height: 60px;
+            width: 100%;
+            background: $white;
+			border: 2px solid #E4EBF3;
+            border-radius: 8px;
+            padding: rem(4) rem(15);
+            color: $black;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 22px;
+			transition: all 0.3s;
+
+            @include placeholder-content {
+				color: $grey;
+            }
+        }
+    }
+	&__viewpass {
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		width: 24px;
+		height: 24px;
+		transform: translateY(-50%);
+		cursor: pointer;
+	
+		&.active {
+			&:before {
+				background-image: url('../img/interface/pass-view.svg');
+			}
+		}
+	
+		&:before {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			background-image: url('../img/interface/pass-hide.svg');
+			background-repeat: no-repeat;
+		}
+	}
+	&__required {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 8px;
+		height: 8px;
+		transform: translateY(-50%);
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 8px;
+			height: 8px;
+			background-image: url('../img/interface/star.svg');
+			background-repeat: no-repeat;
+		}
+	}
+    .button {
+		margin-top: 30px;
+
+		width: 100%;
+		height: 48px;
+		text-align: center;
+		line-height: 48px;
+		background: $primary-bg;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 160%;
+		transition: all 0.3 ease;
+		border-radius: 5px;
+
+		&:hover {
+			background: $primary-bg-hover;
+		}
+	}
+    // * ERROR
+    &__error {
+        color: $red;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+    }
+}
+
+@import "checkbox";
+@import "select";

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+		"title":"Demo 1"
+	})
+	<body>
+		@@include('html/_preloader-markup.htm',{})
+		<div class="wrapper">
+			<div class="wrapper__bg">
+				<div class="wrapper__image-ibg">
+					<img src="img/bg.png" alt="Apvition">
+				</div>
+			</div>
+			<main class="main">
+				<section class="demos">
+					<h2 class="demos__heading">check our demo</h2>
+					<p class="demos__description">you can use demo for free</p>
+					<div class="demos__grid">
+						<article class="demos-card demos-card_blue">
+							<img src="img/card-1.png" alt="Apvition">
+							<strong>Work & projects</strong>
+							<p>Description</p>
+							<span>10:00 min for Free</span>
+							<a href="#" class="page-btn page-btn_blue">
+								<span>Run Demo</span>
+								<img src="img/interface/arrow.svg" alt="Apvition">
+							</a>
+						</article>
+						<article class="demos-card demos-card_yellow">
+							<img src="img/card-2.png" alt="Apvition">
+							<strong>Games & Entertainment</strong>
+							<p>Description</p>
+							<span>10:00 min for Free</span>
+							<a href="#" class="page-btn page-btn_yellow">
+								<span>Run Demo</span>
+								<img src="img/interface/arrow.svg" alt="Apvition">
+							</a>
+						</article>
+					</div>
+				</section>
+			</main>
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

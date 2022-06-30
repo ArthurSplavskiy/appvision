@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+		"title":"Appvision"
+	})
+	<body>
+		@@include('html/_preloader-markup.htm',{})
+		<div class="wrapper">
+			<a href="login.html">login</a>
+			<a href="register.html">register</a>
+			<a href="demo-1.html">demo-1</a>
+			<a href="demo-2.html">demo-2</a>
+		</div>
+		<style>
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+			a {
+				margin: 20px;
+				font-size: 42px;
+			}
+		</style>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
